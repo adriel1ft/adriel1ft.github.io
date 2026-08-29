@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Clustering carbon capture hubs at TRIL Lab — geospatial ML that improved high-yield site selection by over 25%."
+      content="OCR model quantization at Dharma-AI — 40% less GPU usage and 20% faster inference, validated with an LLM-as-a-judge."
     />
-    <title>Clustering Carbon Capture Hubs — Adriel Ferreira Trajano</title>
+    <title>Shrinking OCR Models — Adriel Ferreira Trajano</title>
     <link rel="icon" href="../assets/IMG_2942.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,30 +21,30 @@
     <div class="grain" aria-hidden="true"></div>
     <article class="case-page">
       <a class="case-back" href="../index.html">← Back to the zine</a>
-      <h1>Clustering Carbon Capture Hubs</h1>
+      <h1>Shrinking OCR Models</h1>
       <p class="lede">
-        Deciding where carbon capture should actually go, with clustering
-        instead of guesswork.
+        Same output, far less hardware — and a way to prove the quality didn’t
+        quietly drop.
       </p>
 
       <dl class="case-meta">
         <div>
           <dt>Role</dt>
-          <dd>Data Scientist</dd>
+          <dd>Data Scientist Intern</dd>
         </div>
         <div>
           <dt>Timeline</dt>
-          <dd>Sep 2023 — Sep 2025</dd>
+          <dd>Jul 2025 — Oct 2025</dd>
         </div>
         <div>
           <dt>Tools</dt>
-          <dd>Python, MeanShift, HDBSCAN, ETL</dd>
+          <dd>PyTorch, GPTQ, Hugging Face, Vertex AI</dd>
         </div>
       </dl>
 
       <figure class="case-shot">
         <img
-          src="../assets/projects/02-ccs-clustering.svg"
+          src="../assets/projects/05-ocr-quantization.svg"
           alt=""
           width="1600"
           height="1000"
@@ -53,19 +53,26 @@
 
       <div class="case-body">
         <p>
-          At TRIL Lab I worked on where carbon capture and storage infrastructure
-          should actually go. The input was geospatial and emissions data; the
-          output was a clearer map of high-potential hubs.
+          OCR models are expensive to run. At Dharma-AI I optimized ours with
+          GPTQ quantization, which cut GPU usage by 40% and made inference 20%
+          faster.
         </p>
         <p>
-          I built ETL pipelines, ran exploratory analysis, and trained MeanShift
-          and HDBSCAN models on treated data to classify those hubs. Visualizations
-          sat on top so the results could support siting decisions, not just live
-          in a notebook.
+          The obvious risk with quantization is that quality degrades in ways
+          that are hard to spot. So I validated the output with an
+          LLM-as-a-Judge framework, which gave us a repeatable way to say the
+          smaller model was still good enough to ship.
         </p>
         <p>
-          The models improved selection of high-yield sites by over 25% — a
-          practical gain in a domain where picking the wrong location is expensive.
+          A lot of the work was upstream of the model. I ran EDA and sanity
+          checks on high-volume Portuguese text data, finding patterns and
+          stripping noise, because OCR improvements are only as good as what you
+          measure them against.
+        </p>
+        <p>
+          I also engineered specialized coding datasets and enriched them with
+          Google Vertex AI, which sped up the preparation phase for training
+          small language models.
         </p>
       </div>
     </article>

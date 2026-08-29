@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Adriel Ferreira Trajano — Data scientist in João Pessoa, Brazil. Applied AI, language models, and data pipelines."
+      content="Adriel Ferreira Trajano — data scientist in João Pessoa, Brazil. Machine learning across carbon capture, education, accounting, and music."
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Adriel Ferreira Trajano" />
+    <meta name="theme-color" content="#f2ece0" />
+    <meta property="og:title" content="Adriel Ferreira Trajano — Data Scientist" />
     <meta
       property="og:description"
-      content="Data scientist. Applied AI, language models, and data pipelines."
+      content="Carbon capture, essay grading, accounting bots, autotune. Four industries, one recurring problem: the data is a mess."
     />
     <meta property="og:type" content="website" />
     <title>Adriel Ferreira Trajano</title>
@@ -19,190 +19,319 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Covered+By+Your+Grace&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Indie+Flower&family=Jacques+Francois&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="identity">
-        <img
-          class="photo"
-          src="assets/IMG_2942.jpeg"
-          alt="Portrait of Adriel Ferreira Trajano"
-          width="160"
-          height="160"
-        />
-        <h1>Adriel Ferreira Trajano</h1>
-        <p class="role">Data Scientist</p>
-        <p class="bio">
-          I am a Data Scientist based in João Pessoa, Brazil, with 3 years of experience in machine learning, AI engineering, data analysis, and data engineering. I have applied these skills across the oil &amp; gas, education, accounting, and music technology industries.
-          I am proficient in Python, SQL, data visualization, and data pipeline development, and I combine a research-oriented mindset with a strong understanding of business needs. I am always looking for new challenges where I can build impactful data-driven solutions and continue growing professionally.
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="kicker">
+        <span>Adriel Ferreira Trajano</span>
+        <span class="dot" aria-hidden="true">◆</span>
+        <span>Data Scientist</span>
+        <span class="dot" aria-hidden="true">◆</span>
+        <span>João Pessoa, BR</span>
+      </p>
+
+      <nav class="zine-nav" aria-label="Sections">
+        <a href="#about">about</a>
+        <a href="#work">work</a>
+        <a href="#stack">stack</a>
+        <a href="#contact">say hi</a>
+      </nav>
+
+      <h1 class="hero-title">
+        <span class="line">I build solutions</span>
+        <span class="line">using</span>
+        <span class="line line--mark"> the power of data.</span>
+      </h1>
+
+      <p class="hero-tagline">
+        If  you need AI Agents, chatbots, predictive models, or any other data-driven solution, contact me.
+      </p>
+
+      <ul class="hero-tags">
+        <li class="tag tag--sage">oil &amp; gas</li>
+        <li class="tag tag--amber">education</li>
+        <li class="tag tag--coral">accounting</li>
+        <li class="tag tag--blush">music</li>
+      </ul>
+
+      <p class="stamp" aria-hidden="true">UFPB<br /><span>’22—’26</span></p>
+      <div class="blob" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <!-- ================= ABOUT ================= -->
+      <section class="about" id="about">
+        <h2 class="section-head"><span>01</span> who’s writing</h2>
+
+        <div class="about-grid">
+          <figure class="portrait-wrap">
+            <img
+              class="portrait"
+              src="assets/IMG_2942.jpeg"
+              alt="Adriel Ferreira Trajano"
+              width="420"
+              height="500"
+              loading="lazy"
+            />
+            <figcaption>me, allegedly</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p>
+              I’m Adriel. I am a data scientist based in João Pessoa, Brazil, and I 
+             enjoy leveraging the power of AI to build solutions that help people.
+            </p>
+            <p>
+              The path has been a weird one. Carbon capture sites. An essay
+              tutor for high schoolers. Accounting agents living inside
+              WhatsApp. Now models that fix out-of-tune singing. Oil and gas,
+              education, accounting, music. I am a well-rounded data scientist 
+              that work with different domains and problems but always with the solid foundation of data science.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORK =================
+        TO EDIT A PROJECT: change the text inside the <article>.
+        - card--coral / --amber / --sage / --blush / --ink sets the accent colour
+          (colour follows the domain legend in the hero tags)
+        - data-span sets how wide the card is (4 to 8, out of 12)
+        - data-rot tilts the card in degrees (keep it small, -2 to 2)
+        - swap the href for a GitHub or live-demo link when you have one
+      -->
+      <section class="work" id="work">
+        <h2 class="section-head"><span>02</span> things I built</h2>
+
+        <div class="work-grid">
+          <article class="card card--amber" data-span="7" data-rot="-1.2">
+            <p class="card-no">01</p>
+            <div class="card-cover" aria-hidden="true"></div>
+            <h3>TutorIA</h3>
+            <p class="card-desc">
+              A chatbot that actually helps students with hard math and ENEM
+              essays instead of just sounding confident. Got it to ~90% response
+              accuracy and shipped it as a real API teachers could hit.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>LLMs</li>
+              <li>Node.js</li>
+              <li>Docker</li>
+            </ul>
+            <p class="card-meta">TRIL Lab · 2023—2025</p>
+            <a class="card-link" href="projects/tutoria.html">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="card card--sage" data-span="5" data-rot="1.4">
+            <p class="card-no">02</p>
+            <div class="card-cover" aria-hidden="true"></div>
+            <h3>Carbon Capture Hub Clustering</h3>
+            <p class="card-desc">
+              Where should you actually put a carbon capture site? I clustered
+              emissions and geospatial data to answer that, and high-yield site
+              picks got 25% better.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Scikit-learn</li>
+              <li>HDBSCAN</li>
+              <li>Pandas</li>
+            </ul>
+            <p class="card-meta">TRIL Lab · 2023—2025</p>
+            <a class="card-link" href="projects/ccs-clustering.html">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="card card--coral" data-span="5" data-rot="1">
+            <p class="card-no">03</p>
+            <div class="card-cover" aria-hidden="true"></div>
+            <h3>Accounting Agents on WhatsApp</h3>
+            <p class="card-desc">
+              Accountants were digging for numbers by hand. I built agents that
+              answer them in plain language over WhatsApp, and trimmed the RAG
+              corpus by 90% so the answers got better, not just faster.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>CrewAI</li>
+              <li>LangChain</li>
+              <li>RAG</li>
+            </ul>
+            <p class="card-meta">Dhart · 2024—2025</p>
+            <a class="card-link" href="projects/financial-agents.html">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="card card--ink" data-span="7" data-rot="-0.8">
+            <p class="card-no">04</p>
+            <div class="card-cover" aria-hidden="true"></div>
+            <h3>Shrinking OCR Models</h3>
+            <p class="card-desc">
+              Big OCR models eat GPUs. Quantized them down to 40% less GPU and
+              20% faster inference, then used an LLM-as-a-judge to prove the
+              output didn’t get worse.
+            </p>
+            <ul class="chips">
+              <li>PyTorch</li>
+              <li>GPTQ</li>
+              <li>Hugging Face</li>
+              <li>Vertex AI</li>
+            </ul>
+            <p class="card-meta">Dharma-AI · 2025</p>
+            <a class="card-link" href="projects/ocr-quantization.html">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="card card--blush" data-span="6" data-rot="1.1">
+            <p class="card-no">05</p>
+            <div class="card-cover" aria-hidden="true"></div>
+            <h3>Automatic Pitch Correction</h3>
+            <p class="card-desc">
+              Making off-key singing sound right. Rebuilt the data pipeline and
+              training strategy behind it and pushed accuracy from 73% to 88%.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>Audio ML</li>
+              <li>ETL</li>
+            </ul>
+            <p class="card-meta">Moises · 2025—now</p>
+            <a class="card-link" href="projects/pitch-correction.html">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= STACK ================= -->
+      <section class="stack" id="stack">
+        <h2 class="section-head"><span>03</span> the toolbox</h2>
+
+        <div class="stack-rows">
+          <div class="stack-row">
+            <p class="stack-label">languages</p>
+            <ul class="chips chips--loose">
+              <li class="big">Python</li>
+              <li class="big">SQL</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+
+          <div class="stack-row">
+            <p class="stack-label">ai / ml</p>
+            <ul class="chips chips--loose">
+              <li class="big">PyTorch</li>
+              <li>Scikit-learn</li>
+              <li class="big">LangChain</li>
+              <li>Hugging Face</li>
+              <li>OpenAI</li>
+              <li class="big">RAG</li>
+            </ul>
+          </div>
+
+          <div class="stack-row">
+            <p class="stack-label">backend &amp; data</p>
+            <ul class="chips chips--loose">
+              <li>FastAPI</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+
+          <div class="stack-row">
+            <p class="stack-label">analysis &amp; viz</p>
+            <ul class="chips chips--loose">
+              <li class="big">Pandas</li>
+              <li>NumPy</li>
+              <li>Plotly</li>
+              <li>Power BI</li>
+              <li>web scraping</li>
+            </ul>
+          </div>
+
+          <div class="stack-row">
+            <p class="stack-label">cloud &amp; tools</p>
+            <ul class="chips chips--loose">
+              <li>AWS</li>
+              <li>GCP</li>
+              <li class="big">Docker</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="contact" id="contact">
+        <h2 class="section-head"><span>04</span> the back cover</h2>
+
+        <p class="contact-line">
+          Working on something with messy data? I like those.
         </p>
-        <p class="links">
-          <a href="mailto:adrielft.work@gmail.com">Email</a>
-          <a href="https://github.com/adriel1ft" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/adriel-ft" rel="noopener noreferrer">LinkedIn</a>
-          <a href="CV_Adriel_Data_Scientist.pdf">CV</a>
-        </p>
-      </header>
 
-      <main>
-        <section class="resume" aria-labelledby="resume-heading">
-          <h2 id="resume-heading">Experience</h2>
-          <ul>
-            <li>
-              <div>
-                <p class="company">Moises</p>
-                <p class="position">Data Scientist Researcher</p>
-                <p class="detail">
-                  ETL for large-scale music data and trained autotuning models 
-                </p>
-              </div>
-              <p class="dates">Nov 2025 — Now</p>
-            </li>
-            <li>
-              <div>
-                <p class="company">Dharma-AI</p>
-                <p class="position">Data Scientist Intern</p>
-                <p class="detail">
-                  Quantized OCR models (40% less GPU, 20% faster) and prepared
-                  data for specialized small language models.
-                </p>
-              </div>
-              <p class="dates">Jul 2025 — Oct 2025</p>
-            </li>
-            <li>
-              <div>
-                <p class="company">TRIL Lab</p>
-                <p class="position">Data Scientist</p>
-                <p class="detail">
-                  CCS hub clustering (+25% site selection) and TutorIA, an
-                  education chatbot at ~90% accuracy.
-                </p>
-              </div>
-              <p class="dates">Sep 2023 — Sep 2025</p>
-            </li>
-            <li>
-              <div>
-                <p class="company">Dhart</p>
-                <p class="position">AI Engineer</p>
-                <p class="detail">
-                  WhatsApp LLMs for accounting data; CrewAI and RAG that cut
-                  data load 90% and saved 40% of staff time.
-                </p>
-              </div>
-              <p class="dates">Sep 2024 — Feb 2025</p>
-            </li>
-          </ul>
-        </section>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:adrielft.work@gmail.com">
+              <span class="lbl">email</span>
+              <span class="val">adrielft.work@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/adriel1ft" rel="noopener noreferrer">
+              <span class="lbl">github</span>
+              <span class="val">adriel1ft</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/adriel-ft"
+              rel="noopener noreferrer"
+            >
+              <span class="lbl">linkedin</span>
+              <span class="val">adriel-ft</span>
+            </a>
+          </li>
+          <li>
+            <a href="CV_Adriel_Data_Scientist.pdf">
+              <span class="lbl">cv</span>
+              <span class="val">the formal version (pdf)</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <section class="resume education" aria-labelledby="education-heading">
-          <h2 id="education-heading">Education</h2>
-          <ul>
-            <li>
-              <div>
-                <p class="company">Universidade Federal da Paraíba</p>
-                <p class="position">B.S. Data Science and Artificial Intelligence</p>
-                <p class="detail">João Pessoa, Brazil</p>
-              </div>
-              <p class="dates">2022 — 2026</p>
-            </li>
-          </ul>
-        </section>
+    <footer class="colophon">
+      <p>Made in João Pessoa. Hand-written HTML, no frameworks.</p>
+      <button
+        class="riso"
+        type="button"
+        aria-pressed="false"
+        title="misprint the ink layers"
+      >
+        <span aria-hidden="true">◉</span>
+        <span class="sr-only">Toggle misprinted ink layers</span>
+      </button>
+    </footer>
 
-        <section class="skills" aria-labelledby="skills-heading">
-          <h2 id="skills-heading">Skills</h2>
-          <p>
-            Python, SQL, JavaScript · PyTorch, Scikit-learn, LangChain, RAG ·
-            FastAPI, Node.js, PostgreSQL, Docker, AWS, GCP
-          </p>
-        </section>
-
-        <section class="projects" aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Projects</h2>
-
-          <article>
-            <div class="project-copy">
-              <h3>Automatic Pitch Correction <em>2025</em></h3>
-              <p>
-                Designed ETL for large-scale music datasets and improved
-                pitch-correction accuracy from 73% to 88% through better data
-                selection and a targeted training strategy.
-              </p>
-              <a class="more" href="projects/pitch-correction.html">Read the case study</a>
-            </div>
-            <figure class="shot">
-              <img
-                src="assets/projects/04-pitch-correction.svg"
-                alt=""
-                width="1600"
-                height="1000"
-              />
-            </figure>
-          </article>
-
-          <article>
-            <div class="project-copy">
-              <h3>Financial AI Agents <em>2024</em></h3>
-              <p>
-                CrewAI agents and ETL for accounting data, plus a RAG pipeline
-                that cut data load by over 90% and saved staff about 40% of
-                their time.
-              </p>
-              <a class="more" href="projects/financial-agents.html">Read the case study</a>
-            </div>
-            <figure class="shot">
-              <img
-                src="assets/projects/01-financial-agents.svg"
-                alt=""
-                width="1600"
-                height="1000"
-              />
-            </figure>
-          </article>
-
-          <article>
-            <div class="project-copy">
-              <h3>Clustering Carbon Capture Hubs <em>2023–2025</em></h3>
-              <p>
-                Mapped CCS hubs from geospatial and emissions data and trained
-                clustering models that improved high-yield site selection by
-                over 25%.
-              </p>
-              <a class="more" href="projects/ccs-clustering.html">Read the case study</a>
-            </div>
-            <figure class="shot">
-              <img
-                src="assets/projects/02-ccs-clustering.svg"
-                alt=""
-                width="1600"
-                height="1000"
-              />
-            </figure>
-          </article>
-
-          <article>
-            <div class="project-copy">
-              <h3>TutorIA <em>2023–2025</em></h3>
-              <p>
-                An educational chatbot for math and ENEM essay guidance, at
-                about 90% response accuracy, shipped as a containerized API.
-              </p>
-              <a class="more" href="projects/tutoria.html">Read the case study</a>
-            </div>
-            <figure class="shot">
-              <img
-                src="assets/projects/03-conversational-api.svg"
-                alt=""
-                width="1600"
-                height="1000"
-              />
-            </figure>
-          </article>
-        </section>
-      </main>
-    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
