@@ -5,332 +5,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Adriel Ferreira Trajano — data scientist in João Pessoa, Brazil. Machine learning across carbon capture, education, accounting, and music."
+      content="Adriel Ferreira Trajano — Brazilian data scientist. Work, education, published papers, hackathons, and projects."
     />
-    <meta name="theme-color" content="#f2ece0" />
-    <meta property="og:title" content="Adriel Ferreira Trajano — Data Scientist" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Adriel Ferreira — Data Scientist" />
     <meta
       property="og:description"
-      content="Carbon capture, essay grading, accounting bots, autotune. Four industries, one recurring problem: the data is a mess."
+      content="Brazilian data scientist with experience in academia and industry."
     />
     <meta property="og:type" content="website" />
-    <title>Adriel Ferreira Trajano</title>
-    <link rel="icon" href="assets/IMG_2942.jpeg" />
+    <title>Adriel Ferreira — Data Scientist</title>
+    <link rel="icon" href="assets/IMG_5594.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Apple devices render SF Pro from the system stack in styles.css and
+         never fetch this; Inter is the fallback for Windows / Android. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Covered+By+Your+Grace&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Indie+Flower&family=Jacques+Francois&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <div class="grain" aria-hidden="true"></div>
 
-    <header class="hero">
-      <p class="kicker">
-        <span>Adriel Ferreira Trajano</span>
-        <span class="dot" aria-hidden="true">◆</span>
-        <span>Data Scientist</span>
-        <span class="dot" aria-hidden="true">◆</span>
-        <span>João Pessoa, BR</span>
-      </p>
-
-      <nav class="zine-nav" aria-label="Sections">
-        <a href="#about">about</a>
-        <a href="#work">work</a>
-        <a href="#stack">stack</a>
-        <a href="#contact">say hi</a>
-      </nav>
-
-      <h1 class="hero-title">
-        <span class="line">I build solutions</span>
-        <span class="line">using</span>
-        <span class="line line--mark"> the power of data.</span>
-      </h1>
-
-      <p class="hero-tagline">
-        If  you need AI Agents, chatbots, predictive models, or any other data-driven solution, contact me.
-      </p>
-
-      <ul class="hero-tags">
-        <li class="tag tag--sage">oil &amp; gas</li>
-        <li class="tag tag--amber">education</li>
-        <li class="tag tag--coral">accounting</li>
-        <li class="tag tag--blush">music</li>
-      </ul>
-
-      <p class="stamp" aria-hidden="true">UFPB<br /><span>’22—’26</span></p>
-      <div class="blob" aria-hidden="true"></div>
-    </header>
-
-    <main id="main">
-      <!-- ================= ABOUT ================= -->
-      <section class="about" id="about">
-        <h2 class="section-head"><span>01</span> who’s writing</h2>
-
-        <div class="about-grid">
-          <figure class="portrait-wrap">
-            <img
-              class="portrait"
-              src="assets/IMG_2942.jpeg"
-              alt="Adriel Ferreira Trajano"
-              width="420"
-              height="500"
-              loading="lazy"
-            />
-            <figcaption>me, allegedly</figcaption>
-          </figure>
-
-          <div class="about-copy">
-            <p>
-              I’m Adriel. I am a data scientist based in João Pessoa, Brazil, and I 
-             enjoy leveraging the power of AI to build solutions that help people.
-            </p>
-            <p>
-              The path has been a weird one. Carbon capture sites. An essay
-              tutor for high schoolers. Accounting agents living inside
-              WhatsApp. Now models that fix out-of-tune singing. Oil and gas,
-              education, accounting, music. I am a well-rounded data scientist 
-              that work with different domains and problems but always with the solid foundation of data science.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= WORK =================
-        TO EDIT A PROJECT: change the text inside the <article>.
-        - card--coral / --amber / --sage / --blush / --ink sets the accent colour
-          (colour follows the domain legend in the hero tags)
-        - data-span sets how wide the card is (4 to 8, out of 12)
-        - data-rot tilts the card in degrees (keep it small, -2 to 2)
-        - swap the href for a GitHub or live-demo link when you have one
-      -->
-      <section class="work" id="work">
-        <h2 class="section-head"><span>02</span> things I built</h2>
-
-        <div class="work-grid">
-          <article class="card card--amber" data-span="7" data-rot="-1.2">
-            <p class="card-no">01</p>
-            <div class="card-cover" aria-hidden="true"></div>
-            <h3>TutorIA</h3>
-            <p class="card-desc">
-              A chatbot that actually helps students with hard math and ENEM
-              essays instead of just sounding confident. Got it to ~90% response
-              accuracy and shipped it as a real API teachers could hit.
-            </p>
-            <ul class="chips">
-              <li>Python</li>
-              <li>LLMs</li>
-              <li>Node.js</li>
-              <li>Docker</li>
-            </ul>
-            <p class="card-meta">TRIL Lab · 2023—2025</p>
-            <a class="card-link" href="projects/tutoria.html">
-              Read the case study <span aria-hidden="true">→</span>
-            </a>
-          </article>
-
-          <article class="card card--sage" data-span="5" data-rot="1.4">
-            <p class="card-no">02</p>
-            <div class="card-cover" aria-hidden="true"></div>
-            <h3>Carbon Capture Hub Clustering</h3>
-            <p class="card-desc">
-              Where should you actually put a carbon capture site? I clustered
-              emissions and geospatial data to answer that, and high-yield site
-              picks got 25% better.
-            </p>
-            <ul class="chips">
-              <li>Python</li>
-              <li>Scikit-learn</li>
-              <li>HDBSCAN</li>
-              <li>Pandas</li>
-            </ul>
-            <p class="card-meta">TRIL Lab · 2023—2025</p>
-            <a class="card-link" href="projects/ccs-clustering.html">
-              Read the case study <span aria-hidden="true">→</span>
-            </a>
-          </article>
-
-          <article class="card card--coral" data-span="5" data-rot="1">
-            <p class="card-no">03</p>
-            <div class="card-cover" aria-hidden="true"></div>
-            <h3>Accounting Agents on WhatsApp</h3>
-            <p class="card-desc">
-              Accountants were digging for numbers by hand. I built agents that
-              answer them in plain language over WhatsApp, and trimmed the RAG
-              corpus by 90% so the answers got better, not just faster.
-            </p>
-            <ul class="chips">
-              <li>Python</li>
-              <li>CrewAI</li>
-              <li>LangChain</li>
-              <li>RAG</li>
-            </ul>
-            <p class="card-meta">Dhart · 2024—2025</p>
-            <a class="card-link" href="projects/financial-agents.html">
-              Read the case study <span aria-hidden="true">→</span>
-            </a>
-          </article>
-
-          <article class="card card--ink" data-span="7" data-rot="-0.8">
-            <p class="card-no">04</p>
-            <div class="card-cover" aria-hidden="true"></div>
-            <h3>Shrinking OCR Models</h3>
-            <p class="card-desc">
-              Big OCR models eat GPUs. Quantized them down to 40% less GPU and
-              20% faster inference, then used an LLM-as-a-judge to prove the
-              output didn’t get worse.
-            </p>
-            <ul class="chips">
-              <li>PyTorch</li>
-              <li>GPTQ</li>
-              <li>Hugging Face</li>
-              <li>Vertex AI</li>
-            </ul>
-            <p class="card-meta">Dharma-AI · 2025</p>
-            <a class="card-link" href="projects/ocr-quantization.html">
-              Read the case study <span aria-hidden="true">→</span>
-            </a>
-          </article>
-
-          <article class="card card--blush" data-span="6" data-rot="1.1">
-            <p class="card-no">05</p>
-            <div class="card-cover" aria-hidden="true"></div>
-            <h3>Automatic Pitch Correction</h3>
-            <p class="card-desc">
-              Making off-key singing sound right. Rebuilt the data pipeline and
-              training strategy behind it and pushed accuracy from 73% to 88%.
-            </p>
-            <ul class="chips">
-              <li>Python</li>
-              <li>PyTorch</li>
-              <li>Audio ML</li>
-              <li>ETL</li>
-            </ul>
-            <p class="card-meta">Moises · 2025—now</p>
-            <a class="card-link" href="projects/pitch-correction.html">
-              Read the case study <span aria-hidden="true">→</span>
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <!-- ================= STACK ================= -->
-      <section class="stack" id="stack">
-        <h2 class="section-head"><span>03</span> the toolbox</h2>
-
-        <div class="stack-rows">
-          <div class="stack-row">
-            <p class="stack-label">languages</p>
-            <ul class="chips chips--loose">
-              <li class="big">Python</li>
-              <li class="big">SQL</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-            </ul>
-          </div>
-
-          <div class="stack-row">
-            <p class="stack-label">ai / ml</p>
-            <ul class="chips chips--loose">
-              <li class="big">PyTorch</li>
-              <li>Scikit-learn</li>
-              <li class="big">LangChain</li>
-              <li>Hugging Face</li>
-              <li>OpenAI</li>
-              <li class="big">RAG</li>
-            </ul>
-          </div>
-
-          <div class="stack-row">
-            <p class="stack-label">backend &amp; data</p>
-            <ul class="chips chips--loose">
-              <li>FastAPI</li>
-              <li>Node.js</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
-              <li>Redis</li>
-            </ul>
-          </div>
-
-          <div class="stack-row">
-            <p class="stack-label">analysis &amp; viz</p>
-            <ul class="chips chips--loose">
-              <li class="big">Pandas</li>
-              <li>NumPy</li>
-              <li>Plotly</li>
-              <li>Power BI</li>
-              <li>web scraping</li>
-            </ul>
-          </div>
-
-          <div class="stack-row">
-            <p class="stack-label">cloud &amp; tools</p>
-            <ul class="chips chips--loose">
-              <li>AWS</li>
-              <li>GCP</li>
-              <li class="big">Docker</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= CONTACT ================= -->
-      <section class="contact" id="contact">
-        <h2 class="section-head"><span>04</span> the back cover</h2>
-
-        <p class="contact-line">
-          Working on something with messy data? I like those.
-        </p>
-
-        <ul class="contact-links">
-          <li>
-            <a href="mailto:adrielft.work@gmail.com">
-              <span class="lbl">email</span>
-              <span class="val">adrielft.work@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/adriel1ft" rel="noopener noreferrer">
-              <span class="lbl">github</span>
-              <span class="val">adriel1ft</span>
-            </a>
-          </li>
-          <li>
+    <div class="page home">
+      <!-- ================= INTRO ================= -->
+      <header class="intro">
+        <div class="intro-side">
+          <img
+            class="avatar"
+            src="assets/IMG_5594.jpg"
+            alt="Adriel Ferreira"
+            width="84"
+            height="84"
+          />
+          <div class="pills">
             <a
+              class="pill"
               href="https://www.linkedin.com/in/adriel-ft"
               rel="noopener noreferrer"
+              >linkedin</a
             >
-              <span class="lbl">linkedin</span>
-              <span class="val">adriel-ft</span>
-            </a>
-          </li>
-          <li>
-            <a href="CV_Adriel_Data_Scientist.pdf">
-              <span class="lbl">cv</span>
-              <span class="val">the formal version (pdf)</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
+            <a
+              class="pill"
+              href="https://github.com/adriel1ft"
+              rel="noopener noreferrer"
+              >github</a
+            >
+          </div>
+        </div>
 
-    <footer class="colophon">
-      <p>Made in João Pessoa. Hand-written HTML, no frameworks.</p>
-      <button
-        class="riso"
-        type="button"
-        aria-pressed="false"
-        title="misprint the ink layers"
-      >
-        <span aria-hidden="true">◉</span>
-        <span class="sr-only">Toggle misprinted ink layers</span>
-      </button>
-    </footer>
+        <div class="intro-main">
+          <h1>Adriel Ferreira</h1>
+          <p class="role">Data scientist</p>
+          <p class="bio">
+            I am a Brazilian data scientist with lots of experience both in
+            academia and job market. I bring innovation, critical thinking and
+            impact wherever I go.
+          </p>
+        </div>
+      </header>
+
+      <main id="main">
+        <!-- ================= WORK =================
+          Each entry is a <div class="entry">. Copy one to add a job,
+          delete one to remove it.
+        -->
+        <section class="section reveal">
+          <h2>Work</h2>
+
+          <div class="entry">
+            <div class="entry-head">
+              <p class="entry-title">
+                Data Scientist Researcher,
+                <span class="entry-org">Moises</span>
+              </p>
+              <p class="entry-date">2025—present</p>
+            </div>
+            <p class="entry-desc">
+              Built ETL for music datasets. Build Pitchzin, an automatic vocal autotuning model, with 98% accuracy. Developed a web application to analyze Pitchzin's performance.
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <p class="entry-title">
+                Data Scientist Intern, <span class="entry-org">Dharma-AI</span>
+              </p>
+              <p class="entry-date">2025</p>
+            </div>
+            <p class="entry-desc">
+              Quantized OCR models, achieving 40% less GPU usage and 20% faster inference.
+              Built datasets for small language models.
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <p class="entry-title">
+                AI Engineer, <span class="entry-org">Dhart</span>
+              </p>
+              <p class="entry-date">2024—2025</p>
+            </div>
+            <p class="entry-desc">
+              Built LLM agents that retrieve accounting data for state and city departments over WhatsApp, cutting staff lookup time by 40%. Refined the RAG corpus by 90%, improving retrieval quality.
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <p class="entry-title">
+                Researcher & AI Engineer, <span class="entry-org">TRIL Lab</span>
+              </p>
+              <p class="entry-date">2023—2025</p>
+            </div>
+            <p class="entry-desc">
+              Mapped industrial carbon capture and storage clusters and hubs in Brazi, in order to help companies reduce their carbon footprint. Developed TutorIA, an educational chatbot, with 90% of response accuracy.
+            </p>
+          </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section class="section reveal">
+          <h2>Education</h2>
+
+          <div class="entry">
+            <div class="entry-head">
+              <p class="entry-title">Universidade Federal da Paraíba (UFPB)</p>
+              <p class="entry-date">2022—2026</p>
+            </div>
+            <p class="entry-desc">
+              B.S Data Science and Artificial Intelligence
+            </p>
+          </div>
+        </section>
+
+        <!-- ================= PAPERS ================= -->
+        <section class="section reveal">
+          <h2>Papers Published</h2>
+
+          <div class="entry">
+            <p class="entry-title">
+              Além das Palavras: Detectando Técnicas Persuasivas em Notícias e Artigos de Opinião da Língua Portuguesa com BERT-Tiny
+            </p>
+            <p class="entry-desc">DOI: https://doi.org/10.5753/sbbd_estendido.2026.249601</p>
+          </div>
+
+          <div class="entry">
+            <p class="entry-title">
+              Métricas de oportunidade para reaproveitamento de poços como
+              estratégia de abatimento de CO2 proveniente de clusters e hubs
+              industriais de CCUS
+            </p>
+            <p class="entry-desc">DOI:10.71190/2024121224649</p>
+          </div>
+        </section>
+
+        <!-- ================= HACKATHONS ================= -->
+        <section class="section reveal">
+          <h2>Hackatons</h2>
+
+          <div class="entry">
+            <p class="entry-title">3rd place — Devs de Impacto</p>
+            <p class="entry-desc">Developed Equalizar, a web application to  inform what are the needs of the Schools of the state of Paraíba, in order to help the government to allocate resources effectively.</p>
+          </div>
+
+          <div class="entry">
+            <p class="entry-title">3rd place — Nasa Space Apps</p>
+            <p class="entry-desc">Developed Breez, a web application to inform people about air quality in Brazilian & United States cities.</p>
+          </div>
+        </section>
+
+        <!-- ================= PROJECTS =================
+          Each project is a <div class="project">. Swap the thumbnail in
+          assets/projects/ and point the link at a case study or a repo.
+        -->
+        <section class="section reveal">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <p class="entry-title">TutorIA</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/03-conversational-api.svg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  A chatbot for hard math and ENEM essays, at about 90% response
+                  accuracy.
+                </p>
+                <a class="pill" href="projects/tutoria.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Carbon Capture Hub Clustering</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/02-ccs-clustering.svg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Geospatial clustering that improved high-yield site picks by
+                  25%.
+                </p>
+                <a class="pill" href="projects/ccs-clustering.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Accounting Agents on WhatsApp</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/01-financial-agents.svg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Agents that answer accountants in plain language. RAG corpus
+                  cut by 90%.
+                </p>
+                <a class="pill" href="projects/financial-agents.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Shrinking OCR Models</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/05-ocr-quantization.svg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  40% less GPU and 20% faster inference, validated with an
+                  LLM-as-a-judge.
+                </p>
+                <a class="pill" href="projects/ocr-quantization.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Automatic Pitch Correction</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/04-pitch-correction.svg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Rebuilt the data pipeline and training strategy; accuracy went
+                  from 73% to 88%.
+                </p>
+                <a class="pill" href="projects/pitch-correction.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section reveal">
+          <h2>Contact</h2>
+          <p class="entry-desc">
+            <a href="mailto:adrielft.work@gmail.com">adrielft.work@gmail.com</a>
+            · <a href="CV_Adriel_Data_Scientist.pdf">CV (PDF)</a>
+          </p>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js" defer></script>
   </body>
