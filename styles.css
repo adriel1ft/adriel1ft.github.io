@@ -34,11 +34,11 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background: var(--bg);
 }
 
 body {
   margin: 0;
-  background: var(--bg);
   color: var(--text);
   font-family: var(--sans);
   font-size: var(--fs-body);
@@ -95,8 +95,76 @@ a:hover {
   left: 16px;
 }
 
+/* ---------------- shooting stars ---------------- */
+
+/* script.js drops .shooting elements in here every few seconds and removes
+   them when the animation ends. Sits behind the text. */
+/* z-index stays positive on purpose: a fixed element at z-index -1 that
+   composites its own layer gets painted below the page background in
+   WebKit, which made the stars invisible in Safari. The content is lifted
+   above the sky instead, in .page below. */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shooting {
+  position: absolute;
+  font-size: 11px;
+  line-height: 1;
+  color: #9a9aa2;
+  opacity: 0;
+  /* longhands, not the shorthand: if var(--dur) ever fails to resolve, only
+     the duration falls back instead of the whole animation being dropped */
+  animation-name: shoot;
+  animation-duration: var(--dur, 1.5s);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* the tail, trailing behind the head along the direction of travel */
+.shooting::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-right: 4px;
+  width: var(--tail, 90px);
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(to left, #b6b6bd, rgba(182, 182, 189, 0));
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--angle, 25deg)) translateX(0);
+  }
+  12% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle, 25deg)) translateX(var(--dist, 460px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sky {
+    display: none;
+  }
+}
+
 /* the one layout rule: a narrow column, centred, with air on both sides */
 .page {
+  position: relative;
+  z-index: 1; /* keeps the text above the shooting stars */
   width: 100%;
   max-width: var(--col);
   margin: 0 auto;

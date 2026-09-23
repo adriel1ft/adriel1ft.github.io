@@ -59,6 +59,16 @@ the page. Both are set in `--sans`.
 ## Notes
 
 - Colours, type sizes, and column width are defined once under `:root`.
-- `script.js` only fades sections in on scroll. Add or remove the `reveal` class
-  to control what animates. The site works fine with JavaScript disabled.
+- `script.js` does two things: fades sections in on scroll (add or remove the
+  `reveal` class to control what animates), and moves the star. The site works
+  fine with JavaScript disabled.
+- Shooting stars cross the page every few seconds, behind the text. The empty
+  `<div class="sky">` near the top of each page is where `script.js` drops them;
+  frequency, angle, distance, speed, and tail length are all in the `CONFIG`
+  block at the top of that file. To see them quickly while tweaking, drop
+  `gapMin` / `gapMax` to a few hundred milliseconds.
+- `.sky` must keep a non-negative `z-index`. A fixed element at `z-index: -1`
+  that composites its own layer gets painted below the page background in
+  Safari, which makes the stars invisible. The text is lifted above them with
+  `position: relative; z-index: 1` on `.page` instead.
 - Animations are skipped automatically for `prefers-reduced-motion`.
