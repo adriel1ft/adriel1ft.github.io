@@ -7,7 +7,7 @@
       name="description"
       content="Adriel Ferreira Trajano — Brazilian data scientist. Work, education, published papers, hackathons, and projects."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#f7f5f0" />
     <meta property="og:title" content="Adriel Ferreira — Data Scientist" />
     <meta
       property="og:description"
@@ -15,7 +15,7 @@
     />
     <meta property="og:type" content="website" />
     <title>Adriel Ferreira — Data Scientist</title>
-    <link rel="icon" href="assets/IMG_5594.jpg" />
+    <link rel="icon" href="assets/IMG_6422.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Apple devices render SF Pro from the system stack in styles.css and
@@ -28,7 +28,6 @@
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <div class="sky" aria-hidden="true"></div>
 
     <div class="page home">
       <!-- ================= INTRO ================= -->
@@ -36,10 +35,10 @@
         <div class="intro-side">
           <img
             class="avatar"
-            src="assets/IMG_5594.jpg"
+            src="assets/IMG_6422-avatar.jpeg"
             alt="Adriel Ferreira"
-            width="84"
-            height="84"
+            width="112"
+            height="112"
           />
           <div class="pills">
             <a
@@ -54,6 +53,7 @@
               rel="noopener noreferrer"
               >github</a
             >
+            <a class="pill" href="CV_Adriel.pdf">cv</a>
           </div>
         </div>
 
@@ -61,14 +61,158 @@
           <h1>Adriel Ferreira</h1>
           <p class="role">Data scientist</p>
           <p class="bio">
-            I'm a Brazilian data scientist with experience in both academia and industry. 
-            I've applied AI and built data pipelines to solve real-world problems across different domains, from education to music. 
-            Feel free to reach out.
+            I'm a Brazilian data scientist working across academia and industry.
+            I build data pipelines and apply AI to real-world problems, from
+            education to music. Always open to new ideas and collaborations.
           </p>
         </div>
       </header>
 
       <main id="main">
+        <!-- ================= PROJECTS =================
+          Each project is a <div class="project">. Swap the thumbnail in
+          assets/projects/ and point the link at a case study or a repo.
+        -->
+        <section class="section reveal">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <p class="entry-title">MidiPitchzin</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/midipitchzin.png"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Automatic vocal pitch correction (autotuning) model.
+                </p>
+                <a class="pill" href="projects/pitch-correction.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">OCR Quantization</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/quantization.jpeg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Quantized OCR models, achieving 40% less GPU usage and 20% faster inference.
+                </p>
+                <a class="pill" href="projects/ocr-quantization.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">TutorIA</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/tutoria-logo.PNG"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Educational chatbot that helps students with math problems and ENEM essays.
+                </p>
+                <a class="pill" href="projects/tutoria.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Equidar</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/equidar.png"
+                alt=""
+                width="1024"
+                height="576"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Scores public schools in Paraíba by the resources they lack, ranking the neediest first. 3rd place at Devs de Impacto.
+                </p>
+                <a class="pill" href="projects/equidar.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Carbon Capture Hub Clustering</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/CCUS-HUBS.png"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  Mapped industrial carbon capture and storage hubs in Brazil to help companies cut emissions.
+                </p>
+                <a class="pill" href="projects/ccs-clustering.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <p class="entry-title">Accounting Agent on WhatsApp</p>
+            <div class="project-body">
+              <img
+                class="thumb"
+                src="assets/projects/accounting.jpg"
+                alt=""
+                width="1600"
+                height="1000"
+                loading="lazy"
+              />
+              <div>
+                <p class="entry-desc">
+                  LLM agents on WhatsApp that answer city officials' accounting questions in plain language, cutting lookup time by 40%.
+                </p>
+                <a class="pill" href="projects/financial-agents.html"
+                  >Get to know more</a
+                >
+              </div>
+            </div>
+          </div>
+
+         
+
+         
+        </section>
+
         <!-- ================= WORK =================
           Each entry is a <div class="entry">. Copy one to add a job,
           delete one to remove it.
@@ -79,13 +223,13 @@
           <div class="entry">
             <div class="entry-head">
               <p class="entry-title">
-                Data Scientist Researcher,
+                Data Science Researcher,
                 <span class="entry-org">Moises</span>
               </p>
               <p class="entry-date">2025—present</p>
             </div>
             <p class="entry-desc">
-              Built ETL for music datasets. Build Pitchzin, an automatic vocal autotuning model, with 98% accuracy. Developed a web application to analyze Pitchzin's performance.
+              Built ETL for music datasets. Build Pitchzin, an automatic vocal autotuning model, with 90% accuracy. Developed a web application to analyze Pitchzin's performance.
             </p>
           </div>
 
@@ -148,6 +292,14 @@
 
           <div class="entry">
             <p class="entry-title">
+              A Virtual Tutoring System Based on Large Language Models for
+              Engineering Mathematics Education: A Proof-of-Concept Study
+            </p>
+            <p class="entry-desc">DOI: https://doi.org/10.1002/cae.70290</p>
+          </div>
+
+          <div class="entry">
+            <p class="entry-title">
               Além das Palavras: Detectando Técnicas Persuasivas em Notícias e Artigos de Opinião da Língua Portuguesa com BERT-Tiny
             </p>
             <p class="entry-desc">DOI: https://doi.org/10.5753/sbbd_estendido.2026.249601</p>
@@ -169,7 +321,7 @@
 
           <div class="entry">
             <p class="entry-title">3rd place — Devs de Impacto</p>
-            <p class="entry-desc">Developed Equalizar, a web application to  inform what are the needs of the Schools of the state of Paraíba, in order to help the government to allocate resources effectively.</p>
+            <p class="entry-desc">Developed Equidar, a web application that shows the needs of public schools in Paraíba, helping the government allocate resources effectively.</p>
           </div>
 
           <div class="entry">
@@ -178,135 +330,12 @@
           </div>
         </section>
 
-        <!-- ================= PROJECTS =================
-          Each project is a <div class="project">. Swap the thumbnail in
-          assets/projects/ and point the link at a case study or a repo.
-        -->
-        <section class="section reveal">
-          <h2>Projects</h2>
-
-          <div class="project">
-            <p class="entry-title">TutorIA</p>
-            <div class="project-body">
-              <img
-                class="thumb"
-                src="assets/projects/03-conversational-api.svg"
-                alt=""
-                width="1600"
-                height="1000"
-                loading="lazy"
-              />
-              <div>
-                <p class="entry-desc">
-                  A chatbot for hard math and ENEM essays, at about 90% response
-                  accuracy.
-                </p>
-                <a class="pill" href="projects/tutoria.html"
-                  >Get to know more</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <p class="entry-title">Carbon Capture Hub Clustering</p>
-            <div class="project-body">
-              <img
-                class="thumb"
-                src="assets/projects/02-ccs-clustering.svg"
-                alt=""
-                width="1600"
-                height="1000"
-                loading="lazy"
-              />
-              <div>
-                <p class="entry-desc">
-                  Geospatial clustering that improved high-yield site picks by
-                  25%.
-                </p>
-                <a class="pill" href="projects/ccs-clustering.html"
-                  >Get to know more</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <p class="entry-title">Accounting Agents on WhatsApp</p>
-            <div class="project-body">
-              <img
-                class="thumb"
-                src="assets/projects/01-financial-agents.svg"
-                alt=""
-                width="1600"
-                height="1000"
-                loading="lazy"
-              />
-              <div>
-                <p class="entry-desc">
-                  Agents that answer accountants in plain language. RAG corpus
-                  cut by 90%.
-                </p>
-                <a class="pill" href="projects/financial-agents.html"
-                  >Get to know more</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <p class="entry-title">Shrinking OCR Models</p>
-            <div class="project-body">
-              <img
-                class="thumb"
-                src="assets/projects/05-ocr-quantization.svg"
-                alt=""
-                width="1600"
-                height="1000"
-                loading="lazy"
-              />
-              <div>
-                <p class="entry-desc">
-                  40% less GPU and 20% faster inference, validated with an
-                  LLM-as-a-judge.
-                </p>
-                <a class="pill" href="projects/ocr-quantization.html"
-                  >Get to know more</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <p class="entry-title">Automatic Pitch Correction</p>
-            <div class="project-body">
-              <img
-                class="thumb"
-                src="assets/projects/04-pitch-correction.svg"
-                alt=""
-                width="1600"
-                height="1000"
-                loading="lazy"
-              />
-              <div>
-                <p class="entry-desc">
-                  Rebuilt the data pipeline and training strategy; accuracy went
-                  from 73% to 88%.
-                </p>
-                <a class="pill" href="projects/pitch-correction.html"
-                  >Get to know more</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
         <!-- ================= CONTACT ================= -->
         <section class="section reveal">
           <h2>Contact</h2>
           <p class="entry-desc">
             <a href="mailto:adrielft.work@gmail.com">adrielft.work@gmail.com</a>
-            · <a href="CV_Adriel_Data_Scientist.pdf">CV (PDF)</a>
+            · <a href="CV_Adriel.pdf">CV (PDF)</a>
           </p>
         </section>
       </main>
